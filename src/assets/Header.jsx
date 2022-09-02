@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./images/logo.jpg"
+import CartWidget from "./CartWidget";
 
 const Header = ()=>{
     return(
@@ -36,16 +37,19 @@ const Header = ()=>{
         <a className="nav-link" href="#">Novedades</a>
         <a className="nav-link" href="#">Noticias</a>
         <a className="nav-link" href="#">Mi cuenta</a>
+        <a href=""><CartWidget/></a>
         
       </div>
     </div>
   </div>
   <div className="container-fluid">
+  <div></div>
     <form className="d-flex " role="search">
       <input className ="form-control me-2" type="search" placeholder="Buscar Disco" aria-label="Search"/>
       <button className="btn btn-outline-success" type="submit">Buscar </button>
     </form>
   </div>
+  
 
 </nav>
 
