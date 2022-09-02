@@ -19,7 +19,7 @@ const Header = ()=>{
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorias
           </a>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="#">Rock&Pop</a></li>
             <li><a className="dropdown-item" href="#">Jazz</a></li>
             <li><a className="dropdown-item" href="#">Funk/Soul</a></li>
