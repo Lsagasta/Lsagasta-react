@@ -1,10 +1,10 @@
 import React,{useState} from "react";
 
-const ItemCount = () =>{
+const ItemCount = ({initial,stock,onAdd  }) =>{
 
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(initial);
 
-    const decrease = () =>{
+    const decrease = () =>{ 
         setCount (count - 1);
     }
 
@@ -15,11 +15,11 @@ const ItemCount = () =>{
 
 
     return(<div className=" container counter">
-    <button onClick={decrease}>-</button>
+    <button disabled = {count <=1} onClick={decrease}>-</button>
     <span>{count}</span>
 
-    <button onClick={increase}>+</button>
-    <div><button>Agregar al Carrito</button></div>
+    <button disabled = {count == stock} onClick={increase}>+</button>
+    <div><button disabled = {stock <=0} onClick ={() => onAdd(count)} >Agregar al Carrito</button></div>
 
 </div>)
 }
