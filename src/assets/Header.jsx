@@ -5,14 +5,15 @@ import CartWidget from "./CartWidget";
 const Header = ()=>{
     return(
         <div className="container-fluid">
-            <nav className="navbar navbar-expand-lg bg-white">
+            <nav className="navbar navbar-expand-lg ">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#"><img src={Logo} width="100"/>      MIA RECORDS</a>
+    <a className="navbar-brand col-3" href="#"><img src={Logo} width="100"/>      MIA RECORDS</a>
+    <div className="col-1"></div>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
       <div className="navbar-nav">
         
       <li className="nav-item dropdown">
