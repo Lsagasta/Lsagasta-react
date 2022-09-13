@@ -2,6 +2,7 @@ import "./App.css";
 
 import Header from "./assets/Header";
 import ItemCount from "./assets/ItemCount";
+import ItemDetailContainer from "./assets/ItemDetailContainer";
 import ItemListContainer from "./assets/ItemListContainer";
 import Novedades from "./assets/Novedades";
 
@@ -19,6 +20,7 @@ function App() {
       <ItemListContainer />
 
       <hr></hr>
+      <ItemDetailContainer />
 
       <ItemCount initial={1} stock={10} onAdd={onAdd} />
 

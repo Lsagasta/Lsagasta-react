@@ -13,7 +13,7 @@ const Item = ({artista,album,precio,stock,img}) => {
                         <strong className="card-text">{album}</strong>
                         <p className="card-text">${precio}</p>
                         <p className="card-text">Stock: {stock}</p>
-                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                        <button type="button" className="btn btn-primary">Agregar al carrito</button>
                     </div>
                 </div>         
             </div> 
