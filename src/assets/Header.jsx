@@ -1,13 +1,14 @@
 import React from "react";
 import Logo from "./images/logo.jpg"
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
 
 const Header = ()=>{
     return(
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg ">
   <div className="container-fluid">
-    <a className="navbar-brand col-3" href="#"><img src={Logo} width="100"/>      MIA RECORDS</a>
+    <NavLink className="navbar-brand col-3" to='/'><img src={Logo} width="100"/>      MIA RECORDS</NavLink>
     <div className="col-1"></div>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,28 +18,14 @@ const Header = ()=>{
       <div className="navbar-nav">
         
       <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categorias
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Rock&Pop</a></li>
-            <li><a className="dropdown-item" href="#">Jazz</a></li>
-            <li><a className="dropdown-item" href="#">Funk/Soul</a></li>
-            <li><a className="dropdown-item" href="#">Reggae/Ska</a></li>
-            <li><a className="dropdown-item" href="#">Metal</a></li>
-            <li><a className="dropdown-item" href="#">Punk/Hardcore</a></li>
-            <li><a className="dropdown-item" href="#">Rap/Hip Hop</a></li>
-            <li><a className="dropdown-item" href="#">Bandas de Sonido</a></li>
-            <li><a className="dropdown-item" href="#">Blues</a></li>
-            <li><a className="dropdown-item" href="#">World Music</a></li>
-            <li><a className="dropdown-item" href="#">Otros</a></li>
-          </ul>
+         
+         
         </li>
-        <a className="nav-link" href="#">Box Sets</a>
-        <a className="nav-link" href="#">Novedades</a>
-        <a className="nav-link" href="#">Noticias</a>
-        <a className="nav-link" href="#">Mi cuenta</a>
-        <a href=""><CartWidget/></a>
+        <NavLink className="nav-link" to='categoria/nacional'>Nacionales</NavLink>
+        <NavLink className="nav-link" to='categoria/importado'>Importados</NavLink>
+        {/* <NavLink className="nav-link" to='/'>Noticias</NavLink>
+        <NavLink className="nav-link" to='/'>Mi cuenta</NavLink> */}
+        <NavLink href=""><CartWidget/></NavLink>
         
       </div>
     </div>
